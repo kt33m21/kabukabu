@@ -1,0 +1,40 @@
+.contents-btn{
+  position:relative;
+  display: block;
+  width: 200px;
+  background-color: #20B2AA;
+  text-align: center;
+  margin: 100px auto;
+  padding:18px;
+  color:#fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+
+}
+
+.contents-btn::before{
+  content:"";
+  position:absolute;
+  top: 50%;
+  left:15px;
+  background: url(../img/mail.svg)no-repeat;
+  background-size: cover;
+  width: 30px;
+  height:30px;
+  transform: translate(0,-50%);
+}
+
+.contents-btn::after{
+  content: "";
+  position:absolute;
+  top:9px;
+  right: 20px;
+  background: url(../img/download__icon.svg)no-repeat;
+  background-size: cover;
+  width: 30px;
+  height:30px;
+  transform: translate(0,-50%);
+  transform: rotate(-90deg);
+}
